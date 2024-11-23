@@ -33,7 +33,16 @@ const MainLayout = () => {
           console.log(collapsed, type);
         }}
       >
-        <div style={{ height: "4rem", textAlign: "center", color: "white" }}>
+        <div
+          style={{
+            height: "4rem",
+            textAlign: "center",
+            color: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <h1>University M.</h1>
         </div>
         <Menu
