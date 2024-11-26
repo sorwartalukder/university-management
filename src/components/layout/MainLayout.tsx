@@ -1,10 +1,10 @@
-import { Layout, Menu, MenuProps } from "antd";
+import { Layout, Menu } from "antd";
 const { Header, Content, Footer, Sider } = Layout;
 
 import { Outlet } from "react-router-dom";
 import { adminSidebarItems } from "../../routes/admin.routes";
 
-const items: MenuProps["items"] = adminSidebarItems;
+// const items: MenuProps["items"] = adminSidebarItems;
 
 const MainLayout = () => {
   return (
@@ -35,7 +35,7 @@ const MainLayout = () => {
           theme="dark"
           mode="inline"
           defaultSelectedKeys={["4"]}
-          items={items}
+          items={adminSidebarItems}
         />
       </Sider>
       <Layout>
