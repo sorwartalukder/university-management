@@ -28,7 +28,7 @@ const Login = () => {
       const res = await login(userInfo).unwrap();
       const user = verifyToken(res.data.accessToken) as TUser;
       dispatch(setUser({ user: user, token: res.data.accessToken }));
-      toast.success("Logged in", { id: toastId, duration: 2000 });
+      toast.success("Logged in", { id: toastId, duration: 5000 });
 
       navigate(`/${user.role}/dashboard`);
     } catch (err) {
