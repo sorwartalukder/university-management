@@ -11,7 +11,7 @@ const MainLayout = () => {
     dispatch(logout());
   };
   return (
-    <Layout style={{ minHeight: "100vh" }}>
+    <Layout style={{ height: "100%" }}>
       <Sidebar />
       <Layout>
         <Header>
